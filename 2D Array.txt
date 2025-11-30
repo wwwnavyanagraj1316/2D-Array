@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int m,n;
+    printf("Enter the values of m and n:");
+    scanf("%d %d",&m,&n);
+    
+    int a[m][n];
+    
+    printf("Enter 2D array elements:\n");
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+    printf("Array elements are:\n");
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Enter the values of m and n:1
+2
+Enter 2D array elements:
+5
+
+6
+Array elements are:
+56
